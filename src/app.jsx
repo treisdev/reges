@@ -21,7 +21,7 @@ class App extends Component {
     return regex
       ? this.state.test.replace(
           regex,
-          str => `<strong><em>${str}</em></strong>`
+          str => `<mark>${str}</mark>`
         )
       : "";
   }
