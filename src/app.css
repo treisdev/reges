@@ -1,0 +1,60 @@
+html,body, #root, .container {
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+input, textarea {
+    outline: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > .group {
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.container > .fixed {
+    flex: none;
+}
+
+.group > label {
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 1.4em;
+}
+
+.regex-inputs {
+    display: flex;
+    align-items: center;
+    font-size: 2.0em;
+    padding: 10px;
+}
+
+.group input, .group textarea {
+    font-size: 0.6em;
+    border: 0;
+}
+
+.regex-inputs > * {
+    flex: 1;
+    padding: 5px;
+}
+
+#input-test-string {
+    flex: 1;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+#input-regex {
+    flex: 4;
+}
